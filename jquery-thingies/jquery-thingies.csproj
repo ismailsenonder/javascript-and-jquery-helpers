@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Functions\GenerateRandomId.aspx" />
+    <Content Include="Functions\GetQueryStringValues.aspx" />
     <Content Include="Functions\ShowCharacterLimitOnKeyUp.aspx" />
     <Content Include="Games\pingpong.html" />
     <Content Include="Games\snake.html" />
@@ -83,6 +84,13 @@
     </Compile>
     <Compile Include="Functions\GenerateRandomId.aspx.designer.cs">
       <DependentUpon>GenerateRandomId.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\GetQueryStringValues.aspx.cs">
+      <DependentUpon>GetQueryStringValues.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Functions\GetQueryStringValues.aspx.designer.cs">
+      <DependentUpon>GetQueryStringValues.aspx</DependentUpon>
     </Compile>
     <Compile Include="Functions\ShowCharacterLimitOnKeyUp.aspx.cs">
       <DependentUpon>ShowCharacterLimitOnKeyUp.aspx</DependentUpon>
