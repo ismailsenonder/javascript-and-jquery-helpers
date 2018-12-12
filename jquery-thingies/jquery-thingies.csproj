@@ -20,6 +20,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -69,6 +70,7 @@
     <Content Include="Functions\CheckAlphanumeric.html" />
     <Content Include="Functions\GenerateRandomId.html" />
     <Content Include="Functions\GetQueryStringValues.aspx" />
+    <Content Include="Functions\KeyboardListener.html" />
     <Content Include="Functions\ShowCharLimit.html" />
     <Content Include="Games\pingpong.html" />
     <Content Include="Games\snake.html" />
