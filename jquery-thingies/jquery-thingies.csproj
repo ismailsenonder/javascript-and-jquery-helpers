@@ -71,6 +71,7 @@
     <Content Include="Functions\GenerateRandomId.html" />
     <Content Include="Functions\GetQueryStringValues.aspx" />
     <Content Include="Functions\KeyboardListener.html" />
+    <Content Include="Functions\SearchOnEnter.aspx" />
     <Content Include="Functions\ShowCharLimit.html" />
     <Content Include="Games\pingpong.html" />
     <Content Include="Games\snake.html" />
@@ -87,6 +88,13 @@
     </Compile>
     <Compile Include="Functions\GetQueryStringValues.aspx.designer.cs">
       <DependentUpon>GetQueryStringValues.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Functions\SearchOnEnter.aspx.cs">
+      <DependentUpon>SearchOnEnter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Functions\SearchOnEnter.aspx.designer.cs">
+      <DependentUpon>SearchOnEnter.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebSamples\CreateTableWithPopup\CreateTableWithPopup.aspx.cs">
