@@ -73,8 +73,6 @@
     <Content Include="Functions\KeyboardListener.html" />
     <Content Include="Functions\SearchOnEnter.aspx" />
     <Content Include="Functions\ShowCharLimit.html" />
-    <Content Include="Games\pingpong.html" />
-    <Content Include="Games\snake.html" />
     <Content Include="Web.config" />
     <Content Include="WebSamples\CreateTableWithPopup\CreateTableWithPopup.aspx" />
     <Content Include="WebSamples\SimplePopup\popupmodule.css" />
