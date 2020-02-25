@@ -1,0 +1,41 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+    var getUrlParameter = function getUrlParameter(sParam) {
+        var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return sParameterName[1] === undefined ? true : sParameterName[1];
+            }
+        }
+    };
+
+    //these functions are for test purposes
+    function click1() {
+        return location.href + "?key=12345&name=ismail";
+    }
+    function click2() {
+        return location.href + "?key=12345444&site=github&word=search&query=select";
+    }
+    function click3() {
+        return location.href + "?name=ismail&name2=iso&job=";
+    }
+
+</script>
+
+<div>
+    <!--These buttons are for test purposes -->
+    <button id="Button3" onclick="location.href=click1()">Click Me!</button>
+    <button id="Button1" onclick="location.href=click2()">Click Me!</button>
+    <button id="Button2" onclick="location.href=click3()">Click Me!</button>
+
+    
+    Search for this parameter: <input type="text" name="querystringparameter" id="querystringparameter" />
+    <button id="Button4" onclick="alert(getUrlParameter($('#querystringparameter').val()));">Search</button>
+</div>

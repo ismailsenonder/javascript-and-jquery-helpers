@@ -1,0 +1,11 @@
+<script type="text/javascript">
+    function txtsearchkeydown(event) {
+        if (event.keyCode == "13") {
+            document.getElementById('btnsearch').click();
+        }
+    }
+</script>
+
+<input type="text" name="txtsearch" id="txtsearch" onkeydown="txtsearchkeydown(event);" />
+<button type="button" id="btnsearch" onclick="alert('Search button clicked!')">Search</button>
+<p>A very useful tip: You can even trigger serverside events by clicking the button with javascript.</p>

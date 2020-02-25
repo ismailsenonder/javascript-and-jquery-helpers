@@ -1,0 +1,16 @@
+﻿<script type="text/javascript">
+    //taken from https://stackoverflow.com/questions/105034/create-guid-uuid-in-javascript
+    function generateRandomId() {
+        function s4() {
+            return Math.floor((1 + Math.random()) * 0x10000)
+                .toString(16)
+                .substring(1);
+        }
+        //return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
+        alert(s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4());
+    }
+</script>
+
+This function is from a Stackoverflow question page. It does not guarantee uniqueness but close enough :)
+<br />
+<button onclick="generateRandomId()">Click me</button>
