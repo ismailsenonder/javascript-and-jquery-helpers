@@ -1,0 +1,43 @@
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var next = 1;
+        $(".add-more").click(function (e) {
+            e.preventDefault();
+            var addto = "#field" + next;
+            var addRemove = "#field" + (next);
+            next = next + 1;
+            var newIn = '<input autocomplete="off" class="input" id="field' + next + '" name="field' + next + '" type="text">';
+            var newInput = $(newIn);
+            var removeBtn = '<button id="remove' + (next - 1) + '" class="remove-this" >-</button></div><div id="field">';
+            var removeButton = $(removeBtn);
+            $(addto).after(newInput);
+            $(addRemove).after(removeButton);
+            $("#field" + next).attr('data-source', $(addto).attr('data-source'));
+            $("#count").val(next);
+
+            $('.remove-this').click(function (e) {
+                e.preventDefault();
+                var fieldNum = this.id.charAt(this.id.length - 1);
+                var fieldID = "#field" + fieldNum;
+                $(this).remove();
+                $(fieldID).remove();
+            });
+        });
+
+
+
+    });
+</script>
+
+
+<input type="hidden" name="count" value="1" />
+
+<div class="controls" id="profs">
+    <form class="input-append">
+        <div id="field"><input autocomplete="off" class="input" id="field1" name="prof1" type="text" placeholder="Press + to add" data-items="8" />
+        <button id="b1" class="add-more" type="button">+</button></div>
+    </form>
+</div>
