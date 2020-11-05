@@ -1,0 +1,44 @@
+<style type="text/css">
+        .blink {
+			font-size:32px;
+            animation: blink 1.5s linear infinite;
+        }
+		.colorchange {
+			font-size:32px;
+            animation: colorchange 1s linear infinite;
+        }
+		.backgroundchange {
+			font-size:32px;
+			background-color: red;
+			padding:15px;
+			animation-name: backgroundchange;
+			animation-duration: 4s;
+		}
+        @keyframes blink{
+            0%{opacity: 0;}
+            25%{opacity:.25;}
+            50%{opacity: .5;}
+            75%{opacity: .75;}
+            100%{opacity: 1;}
+        }
+		
+		@keyframes colorchange{
+			 0%{color: red;}
+            50%{color: yellow;}
+            100%{color: green;}
+		}
+		
+		@keyframes backgroundchange {
+			from {background-color: red;}
+			to {background-color: yellow;}
+}
+
+</style>
+
+<span class="blink" style="color:green;">This text blinks thanks to CSS</span>
+<br><br>
+<span class="colorchange">This text changes color thanks to CSS</span>
+<br><br>
+<div class="backgroundchange">
+This div changes background color thanks to CSS.
+</div>
